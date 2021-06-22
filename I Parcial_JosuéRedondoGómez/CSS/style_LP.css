@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@300&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+    background: url('../Multimedia/Images/Camaro.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    display: table;
+    margin: 0;
+    top: 0;
+}
+
+.full-inner{
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.content {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 500%;
+    color: black;
+    text-shadow: 0 0 300px black;
+}
+
+.content a {
+    border-radius: 9px;
+    text-decoration: none;
+    color: cornflowerblue;
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: bold;
+    border: 3px solid;
+    padding: 7px 13px;
+}
+
+.content a:hover {
+    color: darkgoldenrod;
+}
+
+p {
+    font-size: 160%;
+    line-height: 200%;
+    margin: 3%;
+    font-family: sans-serif;
+}
+
+/*----------------------------------------------------FOOTER-----------------------------------------------------------*/
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, cyan, orange, greenyellow);
+    height: auto;
+    width: 100vw;
+    font-family: "Times New Roman";
+    padding-top: 40px;
+    color: #000;
+}
+
+footer .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400em;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+footer .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+footer .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+footer .socials li{
+    margin: 0 10px;
+}
+
+footer .socials a{
+    text-decoration: none;
+    color: #000;
+}
+
+footer .socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+footer .socials a:hover i{
+    color:aqua;
+}
+
+footer .footer-bottom{
+    background: rgba(230, 223, 223, 0.671);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-content p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+footer .footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+} 
+
+/*------------------------------------------------PORTAFOLIO------------------------------------------------------------*/
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img{
+	width: 100%;
+}
+
+body{
+	background: #E2E2E2;
+	font-family: 'Century Gothic', sans-serif;
+}
+
+.portafolio{
+	width: 90%;
+	max-width: 1400px;
+	margin: auto;
+}
+
+.portafolio h1{
+	text-align: center;
+	font-size: 38px;
+	margin: 15px 0px 40px;
+}
+
+.portafolio-container{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.portafolio-item{
+	width: 30%;
+	position: relative;
+	overflow: hidden;
+}
+
+.portafolio-img{
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.portafolio-text{
+	position: absolute;
+	bottom: 0;
+	padding: 20px;
+
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+
+	-webkit-transform: translateY(100%);
+
+	-ms-transform: translateY(100%);
+
+	transform: translateY(100%);
+
+	-webkit-transition: all 0.5s ease-out;
+
+	transition: all 0.5s ease-out;
+}
+
+.portafolio-text p{
+	text-align: justify;
+}
+
+.portafolio-item:hover .portafolio-text{
+	-webkit-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	transform: translateY(0%);
+}
+
+.portafolio-item:hover .portafolio-img{
+	-webkit-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+/*-----------------------------------------------------MENU-------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@300;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
+}
+.capa{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+    top: 0;left: 0;
+}
+
+.header{
+    width: 60%;
+    height: 100px;
+    position: fixed;
+    top: 0;left: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+}
+.container .btn-menu label{
+    color: red;
+    font-size: 60px;
+    cursor: pointer;
+}
+.logo h1{
+    color: #000;
+    font-weight: 400;
+    font-size: 90px;
+    margin-left: 10px;
+}
+.container .menu{
+    float: right;
+    line-height: 100px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: fixed;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 10px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid red;
+    background: #1f1f1f;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/*-------------------------------------------------PAGINA 1-------------------------------------------------------------*/
+
+.foto{
+    width: 450px;
+    height: 500px;
+    margin-left: 745px;
+    margin-top: 150px;
+    mix-blend-mode: luminosity;
+}
+
+.quien_soy h1 {
+    margin-left: 150px;
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
+    font-size: 100px;
+    color: greenyellow;
+}
+
+.quien_soy p {
+    text-align: justify;
+    margin-left: 150px;
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
+    font-size: 50px;
+    color: rgba(172, 255, 47, 0.753);
+}
+
+/*-------------------------------------------------PAGINA 2-------------------------------------------------------------*/
+
+.acerca h1 {
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 150px;
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
+    font-size: 100px;
+    color: cyan;
+}
+
+.acerca h3 {
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 150px;
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
+    font-size: 60px;
+    color: cyan;
+}
+
+.acerca p {
+    text-align: center;
+    margin-top: auto;
+    margin-left: 150px;
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
+    font-size: 50px;
+    color: rgba(0, 255, 255, 0.671);
+}
+
+/*-------------------------------------------------PAGINA 3-------------------------------------------------------------*/
+
+.contact-form{
+    margin-top: 150px;
+    margin-bottom: 500px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.mail-message-area{
+    width:100%;
+    padding:0 15px;
+}
+
+.mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+}
+
+.not-visible-message{
+    height:0px;
+    opacity: 0;
+}
+
+.visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+}
+
+
+.form{
+    width: 100%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:40px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.form:hover{
+    border:1px solid #8BC3A3;}
+
+.form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #8BC3A3;
+}
+
+textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+} 
+input{
+    height: 75px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.button{
+    padding:8px 12px;
+    background:#0A5175;
+    display: block;
+    width:120px;
+    margin:10px 0 0px 0;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    size: 35px;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+}
+
+.button:hover{
+    background:orange;
+    color:white;
+}
+
+
+.form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#fff;
+    background:orange;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    size: 35px;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+}
+
+.form-btn:hover{
+    background:#111;
+    color: white;
+    border:none;
+}
+
+.form-btn:active{
+    opacity: 0.9;
+}
+center{
+margin-top:330px;
+}
+input {
+    position: relative;
+    z-index: -1;
+}
+
